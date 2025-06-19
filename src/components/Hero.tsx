@@ -14,13 +14,13 @@ export const Hero = () => {
         <div className="absolute inset-0">
           {/* Wavy gradient effect using multiple radial gradients */}
           <div 
-            className="absolute inset-0 opacity-30"
+            className="absolute inset-0 opacity-60"
             style={{
               background: `
-                radial-gradient(ellipse 800px 400px at 20% 30%, rgba(59, 130, 246, 0.4) 0%, transparent 50%),
-                radial-gradient(ellipse 600px 300px at 80% 70%, rgba(147, 197, 253, 0.3) 0%, transparent 50%),
-                radial-gradient(ellipse 400px 200px at 60% 20%, rgba(96, 165, 250, 0.2) 0%, transparent 50%),
-                radial-gradient(ellipse 500px 250px at 40% 80%, rgba(59, 130, 246, 0.25) 0%, transparent 50%)
+                radial-gradient(ellipse 800px 400px at 20% 30%, rgba(59, 130, 246, 0.6) 0%, transparent 50%),
+                radial-gradient(ellipse 600px 300px at 80% 70%, rgba(147, 197, 253, 0.5) 0%, transparent 50%),
+                radial-gradient(ellipse 400px 200px at 60% 20%, rgba(96, 165, 250, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse 500px 250px at 40% 80%, rgba(59, 130, 246, 0.45) 0%, transparent 50%)
               `
             }}
           ></div>
