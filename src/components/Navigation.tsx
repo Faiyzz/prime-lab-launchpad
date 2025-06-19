@@ -15,17 +15,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50" style={{
-      background: `
-        radial-gradient(circle 600px at 15% 25%, rgba(59, 130, 246, 0.7) 0%, rgba(147, 197, 253, 0.4) 30%, transparent 70%),
-        radial-gradient(circle 500px at 85% 75%, rgba(147, 197, 253, 0.6) 0%, rgba(96, 165, 250, 0.3) 40%, transparent 80%),
-        radial-gradient(circle 400px at 65% 15%, rgba(96, 165, 250, 0.5) 0%, rgba(59, 130, 246, 0.2) 50%, transparent 90%),
-        radial-gradient(circle 700px at 35% 85%, rgba(59, 130, 246, 0.6) 0%, rgba(147, 197, 253, 0.3) 35%, transparent 75%),
-        radial-gradient(circle 300px at 90% 20%, rgba(147, 197, 253, 0.4) 0%, transparent 60%),
-        radial-gradient(circle 450px at 10% 70%, rgba(96, 165, 250, 0.5) 0%, transparent 65%),
-        white
-      `
-    }}>
+    <nav className="bg-transparent border-b-0 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo on the left */}
