@@ -12,15 +12,17 @@ export const Hero = () => {
       {/* White background with wavy blue gradient */}
       <div className="absolute inset-0 bg-white">
         <div className="absolute inset-0">
-          {/* Wavy gradient effect using multiple radial gradients */}
+          {/* Enhanced circular gradient effects */}
           <div 
-            className="absolute inset-0 opacity-60"
+            className="absolute inset-0 opacity-70"
             style={{
               background: `
-                radial-gradient(ellipse 800px 400px at 20% 30%, rgba(59, 130, 246, 0.6) 0%, transparent 50%),
-                radial-gradient(ellipse 600px 300px at 80% 70%, rgba(147, 197, 253, 0.5) 0%, transparent 50%),
-                radial-gradient(ellipse 400px 200px at 60% 20%, rgba(96, 165, 250, 0.4) 0%, transparent 50%),
-                radial-gradient(ellipse 500px 250px at 40% 80%, rgba(59, 130, 246, 0.45) 0%, transparent 50%)
+                radial-gradient(circle 600px at 15% 25%, rgba(59, 130, 246, 0.7) 0%, rgba(147, 197, 253, 0.4) 30%, transparent 70%),
+                radial-gradient(circle 500px at 85% 75%, rgba(147, 197, 253, 0.6) 0%, rgba(96, 165, 250, 0.3) 40%, transparent 80%),
+                radial-gradient(circle 400px at 65% 15%, rgba(96, 165, 250, 0.5) 0%, rgba(59, 130, 246, 0.2) 50%, transparent 90%),
+                radial-gradient(circle 700px at 35% 85%, rgba(59, 130, 246, 0.6) 0%, rgba(147, 197, 253, 0.3) 35%, transparent 75%),
+                radial-gradient(circle 300px at 90% 20%, rgba(147, 197, 253, 0.4) 0%, transparent 60%),
+                radial-gradient(circle 450px at 10% 70%, rgba(96, 165, 250, 0.5) 0%, transparent 65%)
               `
             }}
           ></div>
