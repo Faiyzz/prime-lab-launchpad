@@ -9,14 +9,16 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Blue gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="h-full w-full" style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.3) 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
-          }}></div>
+      {/* White background with blue gradient blend */}
+      <div className="absolute inset-0 bg-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 via-blue-200/20 to-blue-300/30">
+          {/* Grid pattern overlay */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="h-full w-full" style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(59,130,246,0.3) 1px, transparent 0)`,
+              backgroundSize: '40px 40px'
+            }}></div>
+          </div>
         </div>
       </div>
       
@@ -32,26 +34,21 @@ export const Hero = () => {
         </div>
         
         {/* Powerful headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
           Transform Your Content Into
-          <span className="block text-white/90">Viral Masterpieces</span>
+          <span className="block text-blue-600">Viral Masterpieces</span>
         </h1>
-        
-        <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          We help content creators and brands turn raw footage into scroll-stopping, 
-          engagement-driving videos that convert viewers into customers.
-        </p>
         
         {/* CTA Button */}
         <Button 
           onClick={scrollToBookCall}
           size="lg"
-          className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
           Get Your Free Strategy Call
         </Button>
         
-        <p className="text-white/70 mt-4 text-sm">
+        <p className="text-gray-600 mt-4 text-sm">
           ✓ No obligation • ✓ 15-minute call • ✓ Instant results
         </p>
       </div>
