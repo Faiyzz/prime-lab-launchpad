@@ -56,7 +56,7 @@ export const WorkShowcase = () => {
                 {/* Vimeo video embed */}
                 <div className="absolute inset-0">
                   <iframe 
-                    src={`https://player.vimeo.com/video/${video.vimeoId}?h=${video.vimeoHash}&badge=0&autopause=0&player_id=0&app_id=58479`}
+                    src={`https://player.vimeo.com/video/${video.vimeoId}?h=${video.vimeoHash}&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479`}
                     frameBorder="0" 
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
