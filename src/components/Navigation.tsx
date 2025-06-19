@@ -15,7 +15,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-transparent backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo on the left */}
@@ -27,11 +27,11 @@ export const Navigation = () => {
             />
           </div>
           
-          {/* Our Work link in the middle */}
+          {/* Our Work link in the middle with glassy effect */}
           <div className="flex-1 flex justify-center">
             <button 
               onClick={scrollToWork}
-              className="text-gray-700 hover:text-blue-600 font-medium text-lg transition-colors duration-300"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 text-gray-800 hover:text-blue-600 font-semibold text-lg transition-all duration-300 hover:bg-white/20 hover:scale-105"
             >
               Our Work
             </button>
@@ -41,7 +41,7 @@ export const Navigation = () => {
           <div className="flex-shrink-0">
             <Button 
               onClick={scrollToBookCall}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-blue-600 to-[#1F2937] hover:from-blue-700 hover:to-[#374151] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Book a Call
             </Button>

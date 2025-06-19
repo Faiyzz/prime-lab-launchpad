@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const WorkShowcase = () => {
@@ -61,7 +62,8 @@ export const WorkShowcase = () => {
               const bookCallSection = document.getElementById('book-call');
               bookCallSection?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+            size="lg"
+            className="bg-gradient-to-r from-blue-600 to-[#1F2937] hover:from-blue-700 hover:to-[#374151] text-white px-12 py-4 text-xl font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             Let's Create Your Success Story
           </Button>
