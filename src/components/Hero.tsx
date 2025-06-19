@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Navigation } from "@/components/Navigation";
 
 export const Hero = () => {
   const scrollToBookCall = () => {
@@ -8,7 +9,10 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Navigation inside Hero */}
+      <Navigation />
+      
       {/* White background with wavy blue gradient */}
       <div className="absolute inset-0 bg-white">
         <div className="absolute inset-0">
@@ -37,34 +41,36 @@ export const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <div className="relative z-10 flex-1 flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Logo */}
-        <div className="mb-8">
-          <img 
-            src="/lovable-uploads/1df3cf2e-be3d-4edd-a4cb-91e43ef80aa3.png" 
-            alt="Prime Lab Studios" 
-            className="h-16 w-auto mx-auto mb-6"
-          />
+        <div className="w-full">
+          <div className="mb-8">
+            <img 
+              src="/lovable-uploads/1df3cf2e-be3d-4edd-a4cb-91e43ef80aa3.png" 
+              alt="Prime Lab Studios" 
+              className="h-16 w-auto mx-auto mb-6"
+            />
+          </div>
+          
+          {/* Powerful headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            Transform Your Content Into
+            <span className="block text-blue-600">Viral Masterpieces</span>
+          </h1>
+          
+          {/* CTA Button */}
+          <Button 
+            onClick={scrollToBookCall}
+            size="lg"
+            className="bg-gradient-to-r from-blue-600 to-[#1F2937] text-white hover:from-blue-700 hover:to-[#374151] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            Get Your Free Strategy Call
+          </Button>
+          
+          <p className="text-gray-600 mt-4 text-sm">
+            ✓ No obligation • ✓ 15-minute call • ✓ Instant results
+          </p>
         </div>
-        
-        {/* Powerful headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-          Transform Your Content Into
-          <span className="block text-blue-600">Viral Masterpieces</span>
-        </h1>
-        
-        {/* CTA Button */}
-        <Button 
-          onClick={scrollToBookCall}
-          size="lg"
-          className="bg-gradient-to-r from-blue-600 to-[#1F2937] text-white hover:from-blue-700 hover:to-[#374151] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-        >
-          Get Your Free Strategy Call
-        </Button>
-        
-        <p className="text-gray-600 mt-4 text-sm">
-          ✓ No obligation • ✓ 15-minute call • ✓ Instant results
-        </p>
       </div>
     </section>
   );
