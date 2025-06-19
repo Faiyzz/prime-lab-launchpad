@@ -2,14 +2,38 @@
 import { Button } from "@/components/ui/button";
 
 export const WorkShowcase = () => {
-  // Placeholder video data - replace with actual portfolio
+  // Real video data with Vimeo embeds
   const videos = [
-    { id: 1, title: "Fitness Transformation", views: "2.3M", platform: "TikTok" },
-    { id: 2, title: "Product Launch", views: "1.8M", platform: "Instagram" },
-    { id: 3, title: "Brand Story", views: "950K", platform: "YouTube Shorts" },
-    { id: 4, title: "Tutorial Series", views: "1.2M", platform: "TikTok" },
-    { id: 5, title: "Behind the Scenes", views: "780K", platform: "Instagram" },
-    { id: 6, title: "Client Testimonial", views: "1.5M", platform: "YouTube Shorts" },
+    { 
+      id: 1, 
+      title: "Edited (1)", 
+      vimeoId: "1094681115",
+      vimeoHash: "47ccfbb801"
+    },
+    { 
+      id: 2, 
+      title: "Edited", 
+      vimeoId: "1094681159",
+      vimeoHash: "5339667ec5"
+    },
+    { 
+      id: 3, 
+      title: "1", 
+      vimeoId: "1094681279",
+      vimeoHash: "268c7965db"
+    },
+    { 
+      id: 4, 
+      title: "Video 4", 
+      vimeoId: "1094681304",
+      vimeoHash: "e168374d98"
+    },
+    { 
+      id: 5, 
+      title: "Edited (3)", 
+      vimeoId: "1094681208",
+      vimeoHash: "537843f16a"
+    },
   ];
 
   return (
@@ -29,24 +53,15 @@ export const WorkShowcase = () => {
           {videos.map((video) => (
             <div key={video.id} className="group cursor-pointer">
               <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
-                {/* Video placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 opacity-80">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                      <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Video info overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-white font-semibold mb-1">{video.title}</h3>
-                  <div className="flex items-center justify-between text-sm text-white/80">
-                    <span>{video.views} views</span>
-                    <span>{video.platform}</span>
-                  </div>
+                {/* Vimeo video embed */}
+                <div className="absolute inset-0">
+                  <iframe 
+                    src={`https://player.vimeo.com/video/${video.vimeoId}?h=${video.vimeoHash}&badge=0&autopause=0&player_id=0&app_id=58479`}
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
+                    title={video.title}
+                  />
                 </div>
               </div>
             </div>
