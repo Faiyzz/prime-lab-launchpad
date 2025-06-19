@@ -49,9 +49,9 @@ export const WorkShowcase = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
           {videos.map((video) => (
-            <div key={video.id} className="group cursor-pointer">
+            <div key={video.id} className="group cursor-pointer w-full sm:w-80 md:w-72 lg:w-80">
               <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
                 {/* Vimeo video embed */}
                 <div className="absolute inset-0">
