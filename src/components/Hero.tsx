@@ -46,7 +46,7 @@ export const Hero = () => {
         <div className="w-full">
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/1df3cf2e-be3d-4edd-a4cb-91e43ef80aa3.png" 
+              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png" 
               alt="Prime Lab Studios" 
               className="h-16 w-auto mx-auto mb-6"
             />

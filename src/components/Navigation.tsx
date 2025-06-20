@@ -21,7 +21,7 @@ export const Navigation = () => {
           {/* Logo on the left */}
           <div className="flex-shrink-0">
             <img 
-              src="/lovable-uploads/1df3cf2e-be3d-4edd-a4cb-91e43ef80aa3.png" 
+              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png" 
               alt="Prime Lab Studios" 
               className="h-14 w-auto"
             />
