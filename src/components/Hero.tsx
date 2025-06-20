@@ -48,7 +48,7 @@ export const Hero = () => {
             <img 
               src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png" 
               alt="Prime Lab Studios" 
-              className="h-16 w-auto mx-auto mb-6"
+              className="h-24 sm:h-28 lg:h-32 w-auto mx-auto mb-6"
             />
           </div>
           
