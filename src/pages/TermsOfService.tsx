@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
@@ -83,8 +82,9 @@ const TermsOfService = () => {
               For questions about these Terms of Service, contact us at:
             </p>
             <p className="text-gray-700">
-              Email: hello@primelabstudios.com<br />
-              Phone: +1 (555) 123-4567
+              Email: office@primelabstudios.com<br />
+              Phone: 307-400-1303<br />
+              Address: 2232 DELL RANGE BLVD, SUITE 245, CHEYENNE, WY 82009
             </p>
           </section>
         </div>

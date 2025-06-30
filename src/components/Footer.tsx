@@ -45,8 +45,13 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>hello@primelabstudios.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>office@primelabstudios.com</li>
+              <li>307-400-1303</li>
+              <li className="text-sm">
+                2232 DELL RANGE BLVD<br />
+                SUITE 245<br />
+                CHEYENNE, WY 82009
+              </li>
               <li>
                 <button 
                   onClick={() => {
