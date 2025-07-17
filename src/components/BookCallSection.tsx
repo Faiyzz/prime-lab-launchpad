@@ -13,14 +13,14 @@ export const BookCallSection = () => {
           </p>
         </div>
         
-        {/* Calendly embed */}
+        {/* Calendly iframe embed */}
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="text-center mb-6">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z"/>
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -32,18 +32,17 @@ export const BookCallSection = () => {
               </p>
             </div>
             
-            {/* Calendly widget */}
-            <div className="calendly-inline-widget" 
-                 data-url="https://calendly.com/office-primelabstudios/30min"
-                 style={{minWidth: '320px', height: '700px'}}>
+            {/* Calendly iframe */}
+            <div className="w-full">
+              <iframe 
+                src="https://calendly.com/office-primelabstudios/30min?embed=true&hide_gdpr_banner=1"
+                width="100%"
+                height="700"
+                frameBorder="0"
+                scrolling="no"
+                className="rounded-lg"
+              ></iframe>
             </div>
-            
-            {/* Calendly script */}
-            <script 
-              type="text/javascript" 
-              src="https://assets.calendly.com/assets/external/widget.js" 
-              async>
-            </script>
           </div>
         </div>
         
