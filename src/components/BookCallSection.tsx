@@ -8,15 +8,15 @@ export const BookCallSection = () => {
             Ready to Transform Your Content?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Book a free 15-minute strategy call to discuss your video editing needs 
+            Book a free 30-minute strategy call to discuss your video editing needs 
             and discover how we can help you create viral content.
           </p>
         </div>
         
-        {/* Calendly embed placeholder */}
+        {/* Calendly embed */}
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <div className="text-center">
+            <div className="text-center mb-6">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
@@ -30,17 +30,20 @@ export const BookCallSection = () => {
                 Choose a time that works best for you. We'll discuss your goals, 
                 current challenges, and how we can help you succeed.
               </p>
-              
-              {/* Calendly widget placeholder - Replace with actual Calendly embed */}
-              <div className="bg-gray-100 rounded-lg p-12 border-2 border-dashed border-gray-300">
-                <p className="text-gray-500 text-lg">
-                  Calendly booking widget will be embedded here
-                </p>
-                <p className="text-sm text-gray-400 mt-2">
-                  Replace this div with your actual Calendly embed code
-                </p>
-              </div>
             </div>
+            
+            {/* Calendly widget */}
+            <div className="calendly-inline-widget" 
+                 data-url="https://calendly.com/office-primelabstudios/30min"
+                 style={{minWidth: '320px', height: '700px'}}>
+            </div>
+            
+            {/* Calendly script */}
+            <script 
+              type="text/javascript" 
+              src="https://assets.calendly.com/assets/external/widget.js" 
+              async>
+            </script>
           </div>
         </div>
         
