@@ -39,7 +39,7 @@ export const WorkShowcase = () => {
   return (
     <section className="py-20 bg-white work-showcase">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Our Work Speaks for Itself
           </h2>
@@ -50,8 +50,13 @@ export const WorkShowcase = () => {
         </div>
         
         <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
-          {videos.map((video) => (
-            <div key={video.id} className="group cursor-pointer w-full sm:w-80 md:w-72 lg:w-80">
+          {videos.map((video, index) => (
+            <div 
+              key={video.id} 
+              className="group cursor-pointer w-full sm:w-80 md:w-72 lg:w-80"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
                 {/* Vimeo video embed */}
                 <div className="absolute inset-0">
@@ -68,7 +73,7 @@ export const WorkShowcase = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-12" data-aos="fade-up" data-aos-delay="600">
           <p className="text-gray-600 mb-6">
             Ready to see results like these for your content?
           </p>

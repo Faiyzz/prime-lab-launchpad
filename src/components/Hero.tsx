@@ -44,30 +44,32 @@ export const Hero = () => {
       <div className="relative z-10 flex-1 flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Logo */}
         <div className="w-full">
-          <div className="mb-8">
+          <div className="mb-8" data-aos="zoom-in" data-aos-delay="100">
             <img 
               src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png" 
               alt="Prime Lab Studios" 
-              className="h-24 sm:h-28 lg:h-32 w-auto mx-auto mb-6"
+              className="h-24 sm:h-28 lg:h-32 w-auto mx-auto mb-6 hover:scale-105 transition-transform duration-300"
             />
           </div>
           
           {/* Powerful headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight" data-aos="fade-up" data-aos-delay="200">
             Transform Your Content Into
-            <span className="block text-blue-600">Viral Masterpieces</span>
+            <span className="block text-blue-600" data-aos="fade-up" data-aos-delay="400">Viral Masterpieces</span>
           </h1>
           
           {/* CTA Button */}
-          <Button 
-            onClick={scrollToBookCall}
-            size="lg"
-            className="bg-gradient-to-r from-blue-600 to-[#1F2937] text-white hover:from-blue-700 hover:to-[#374151] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            Get Your Free Strategy Call
-          </Button>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <Button 
+              onClick={scrollToBookCall}
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-[#1F2937] text-white hover:from-blue-700 hover:to-[#374151] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Get Your Free Strategy Call
+            </Button>
+          </div>
           
-          <p className="text-gray-600 mt-4 text-sm">
+          <p className="text-gray-600 mt-4 text-sm" data-aos="fade-up" data-aos-delay="800">
             ✓ No obligation • ✓ 15-minute call • ✓ Instant results
           </p>
         </div>
