@@ -1,76 +1,63 @@
+'use client';
 
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 
 export const Hero = () => {
   const scrollToBookCall = () => {
-    const bookCallSection = document.getElementById('book-call');
-    bookCallSection?.scrollIntoView({ behavior: 'smooth' });
+    const bookCallSection = document.getElementById("book-call");
+    bookCallSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Navigation inside Hero */}
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#F4F1EB] text-[#1C2120]">
       <Navigation />
-      
-      {/* White background with wavy blue gradient */}
-      <div className="absolute inset-0 bg-white">
-        <div className="absolute inset-0">
-          {/* Enhanced circular gradient effects */}
-          <div 
-            className="absolute inset-0 opacity-70"
-            style={{
-              background: `
-                radial-gradient(circle 600px at 15% 25%, rgba(59, 130, 246, 0.7) 0%, rgba(147, 197, 253, 0.4) 30%, transparent 70%),
-                radial-gradient(circle 500px at 85% 75%, rgba(147, 197, 253, 0.6) 0%, rgba(96, 165, 250, 0.3) 40%, transparent 80%),
-                radial-gradient(circle 400px at 65% 15%, rgba(96, 165, 250, 0.5) 0%, rgba(59, 130, 246, 0.2) 50%, transparent 90%),
-                radial-gradient(circle 700px at 35% 85%, rgba(59, 130, 246, 0.6) 0%, rgba(147, 197, 253, 0.3) 35%, transparent 75%),
-                radial-gradient(circle 300px at 90% 20%, rgba(147, 197, 253, 0.4) 0%, transparent 60%),
-                radial-gradient(circle 450px at 10% 70%, rgba(96, 165, 250, 0.5) 0%, transparent 65%)
-              `
-            }}
-          ></div>
-          {/* Grid pattern overlay */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="h-full w-full" style={{
-              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(59,130,246,0.3) 1px, transparent 0)`,
-              backgroundSize: '40px 40px'
-            }}></div>
-          </div>
-        </div>
+
+      {/* Optional soft gold glow */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-[#bc9c22] opacity-10 blur-3xl rounded-full" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#1D3D2F] opacity-5 blur-2xl rounded-full" />
       </div>
-      
-      {/* Content */}
-      <div className="relative z-10 flex-1 flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        {/* Logo */}
+
+      <div className="relative z-10 flex-1 flex items-center justify-center text-center px-6 sm:px-10 lg:px-16 max-w-5xl mx-auto">
         <div className="w-full">
+          {/* Logo */}
           <div className="mb-8" data-aos="zoom-in" data-aos-delay="100">
-            <img 
-              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png" 
-              alt="Prime Lab Studios" 
+            <img
+              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png"
+              alt="Prime Lab Studios"
               className="h-24 sm:h-28 lg:h-32 w-auto mx-auto mb-6 hover:scale-105 transition-transform duration-300"
             />
           </div>
-          
-          {/* Powerful headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight" data-aos="fade-up" data-aos-delay="200">
-            Transform Your Content Into
-            <span className="block text-blue-600" data-aos="fade-up" data-aos-delay="400">Viral Masterpieces</span>
+
+          {/* Headline */}
+          <h1
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Transform Your Content Into{" "}
+            <span className="block text-[#bc9c22]" data-aos="fade-up" data-aos-delay="400">
+              Viral Masterpieces
+            </span>
           </h1>
-          
-          {/* CTA Button */}
+
+          {/* CTA */}
           <div data-aos="fade-up" data-aos-delay="600">
-            <Button 
+            <Button
               onClick={scrollToBookCall}
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-[#1F2937] text-white hover:from-blue-700 hover:to-[#374151] px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-[#1D3D2F] hover:bg-[#bc9c22] text-[#F4F1EB] hover:text-[#1C2120] px-8 py-4 text-lg font-semibold rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
             >
               Get Your Free Strategy Call
             </Button>
           </div>
-          
-          <p className="text-gray-600 mt-4 text-sm" data-aos="fade-up" data-aos-delay="800">
-            ✓ No obligation • ✓ 15-minute call • ✓ Instant results
+
+          {/* Subtext */}
+          <p className="mt-4 text-sm text-[#5c5c5c]" data-aos="fade-up" data-aos-delay="800">
+            <span className="text-[#bc9c22]">✓</span> No obligation &nbsp;•&nbsp;
+            <span className="text-[#bc9c22]">✓</span> 15-minute call &nbsp;•&nbsp;
+            <span className="text-[#bc9c22]">✓</span> Instant results
           </p>
         </div>
       </div>
