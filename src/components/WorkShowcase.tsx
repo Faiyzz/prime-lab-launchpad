@@ -18,7 +18,9 @@ export const WorkShowcase = () => {
   };
 
   return (
-    <section className="relative py-28 bg-[#F4F1EB] text-[#1C2120] overflow-hidden">
+    <section 
+    id="work"
+    className="relative py-28 bg-[#F4F1EB] text-[#1C2120] overflow-hidden">
       {/* Optional gold glow accents */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-[10%] left-[15%] w-[400px] h-[400px] bg-[#bc9c22] opacity-10 blur-[140px] rounded-full" />

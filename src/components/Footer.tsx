@@ -3,7 +3,7 @@ import { Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[#f3f0e9] text-black py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and description */}
@@ -13,7 +13,7 @@ export const Footer = () => {
               alt="Prime Lab Studios" 
               className="h-10 w-auto mb-4 hover:opacity-80 transition-opacity duration-300"
             />
-            <p className="text-gray-400 mb-4 max-w-md">
+            <p className="text-black mb-4 max-w-md">
               We're a video editing agency specializing in short-form content that drives 
               engagement and converts viewers into loyal customers.
             </p>
@@ -23,7 +23,7 @@ export const Footer = () => {
                 href="https://www.instagram.com/primelabstudiosllc?igsh=MWI3OWtuY2hwMjEyaQ==" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                className="text-black hover:text-white transition-all duration-300 hover:scale-110"
               >
                 <Instagram className="w-6 h-6" />
               </a>
@@ -33,7 +33,7 @@ export const Footer = () => {
           {/* Services */}
           <div data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-black">
               <li><a href="#" className="hover:text-white transition-colors duration-300">Short-form Content</a></li>
               <li><a href="#" className="hover:text-white transition-colors duration-300">Long-form Content</a></li>
               <li><a href="#" className="hover:text-white transition-colors duration-300">Carousel Posts</a></li>
@@ -44,7 +44,7 @@ export const Footer = () => {
           {/* Contact */}
           <div data-aos="fade-up" data-aos-delay="200">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-black">
               <li className="hover:text-white transition-colors duration-300">office@primelabstudios.com</li>
               <li className="hover:text-white transition-colors duration-300">307-400-1303</li>
               <li className="text-sm hover:text-white transition-colors duration-300">

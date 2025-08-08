@@ -30,12 +30,12 @@ export const Navigation = () => {
 
           {/* Center Link */}
           <div className="flex-1 flex justify-center">
-            <button
-              onClick={scrollToWork}
+           <a href="#work"> <button
+              
               className="px-6 py-2 rounded-full border border-[#bc9c22]/60 text-[#1C2120] bg-white/60 hover:bg-white transition-all duration-300 font-medium shadow-sm hover:shadow-md backdrop-blur-sm"
             >
               Our Work
-            </button>
+            </button></a>
           </div>
 
           {/* Book a Call Button */}
