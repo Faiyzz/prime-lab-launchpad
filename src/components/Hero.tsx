@@ -24,7 +24,7 @@ export const Hero = () => {
           {/* Logo */}
           <div className="mb-8" data-aos="zoom-in" data-aos-delay="100">
             <img
-              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png"
+              src="/lovable-uploads/PrimaryIcon.png"
               alt="Prime Lab Studios"
               className="h-24 sm:h-28 lg:h-32 w-auto mx-auto mb-6 hover:scale-105 transition-transform duration-300"
             />

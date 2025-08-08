@@ -22,7 +22,7 @@ export const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <img
-              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png"
+              src="/lovable-uploads/PrimaryLogo.png"
               alt="Prime Lab Studios"
               className="h-12 w-auto"
             />

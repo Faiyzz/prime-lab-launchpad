@@ -9,7 +9,7 @@ export const Footer = () => {
           {/* Logo and description */}
           <div className="col-span-1 md:col-span-2" data-aos="fade-up">
             <img 
-              src="/lovable-uploads/4aa3e042-f885-4dcf-9625-c30b42562339.png" 
+              src="/lovable-uploads/PrimaryIcon.png" 
               alt="Prime Lab Studios" 
               className="h-10 w-auto mb-4 hover:opacity-80 transition-opacity duration-300"
             />
