@@ -47,7 +47,7 @@ export const Hero = () => {
             <Button
               onClick={scrollToBookCall}
               size="lg"
-              className="bg-[#1D3D2F] hover:bg-[#bc9c22] text-[#F4F1EB] hover:text-[#1C2120] px-8 py-4 text-lg font-semibold rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
+              className="bg-[#1D3D2F] hover:bg-[#bc9c22] text-[#F4F1EB] hover:text-[#bfdbd6] px-8 py-4 text-lg font-semibold rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
             >
               Get Your Free Strategy Call
             </Button>
