@@ -34,10 +34,10 @@ export const Footer = () => {
           <div data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-black">
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Short-form Content</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Long-form Content</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Carousel Posts</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Content Strategy</a></li>
+              <li><a href="#" className="hover:text-black transition-colors duration-300">Short-form Content</a></li>
+              <li><a href="#" className="hover:text-black transition-colors duration-300">Long-form Content</a></li>
+              <li><a href="#" className="hover:text-black transition-colors duration-300">Carousel Posts</a></li>
+              <li><a href="#" className="hover:text-black transition-colors duration-300">Content Strategy</a></li>
             </ul>
           </div>
           
