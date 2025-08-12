@@ -23,7 +23,7 @@ export const Footer = () => {
                 href="https://www.instagram.com/primelabstudiosllc?igsh=MWI3OWtuY2hwMjEyaQ==" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black hover:text-white transition-all duration-300 hover:scale-110"
+                className="text-black hover:text-black transition-all duration-300 hover:scale-110"
               >
                 <Instagram className="w-6 h-6" />
               </a>
@@ -58,7 +58,7 @@ export const Footer = () => {
                     const bookCallSection = document.getElementById('book-call');
                     bookCallSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-white transition-colors duration-300 text-left"
+                  className="hover:text-black transition-colors duration-300 text-left"
                 >
                   Book a Call
                 </button>
@@ -73,8 +73,8 @@ export const Footer = () => {
             © 2025 Prime Lab Studios. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
-            <a href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
+            <a href="/privacy-policy" className="text-gray-400 hover:text-black text-sm transition-colors duration-300">Privacy Policy</a>
+            <a href="/terms-of-service" className="text-gray-400 hover:text-black text-sm transition-colors duration-300">Terms of Service</a>
           </div>
         </div>
       </div>
