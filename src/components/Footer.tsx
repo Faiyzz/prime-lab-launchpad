@@ -45,9 +45,9 @@ export const Footer = () => {
           <div data-aos="fade-up" data-aos-delay="200">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-black">
-              <li className="hover:text-white transition-colors duration-300">office@primelabstudios.com</li>
-              <li className="hover:text-white transition-colors duration-300">307-400-1303</li>
-              <li className="text-sm hover:text-white transition-colors duration-300">
+              <li className="hover:text-black transition-colors duration-300">office@primelabstudios.com</li>
+              <li className="hover:text-black transition-colors duration-300">307-400-1303</li>
+              <li className="text-sm hover:text-black transition-colors duration-300">
                 2232 DELL RANGE BLVD<br />
                 SUITE 245<br />
                 CHEYENNE, WY 82009
