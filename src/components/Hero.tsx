@@ -18,18 +18,18 @@ export const Hero = () => {
       <Navigation />
 
       {/* Multi-spot blobs in same dark color palette */}
-      <div
-        aria-hidden
-        className="absolute inset-0 z-0 pointer-events-none blur-3xl will-change-transform"
-        style={{
-          background: `
-            radial-gradient(44rem 44rem at 18% 28%, rgba(28,33,32,0.50), transparent 50%),
-            radial-gradient(38rem 38rem at 82% 18%, rgba(28,33,32,0.42), transparent 54%),
-            radial-gradient(32rem 32rem at 24% 82%, rgba(28,33,32,0.36), transparent 56%),
-            radial-gradient(36rem 36rem at 76% 76%, rgba(28,33,32,0.34), transparent 58%)
-          `,
-        }}
-      />
+     <div
+  aria-hidden
+  className="absolute inset-0 z-0 pointer-events-none blur-3xl will-change-transform"
+  style={{
+    background: `
+      radial-gradient(44rem 44rem at 20% 30%, rgba(110,231,183,0.22), transparent 60%),
+      radial-gradient(40rem 40rem at 80% 25%, rgba(52,211,153,0.18), transparent 62%),
+      radial-gradient(36rem 36rem at 50% 75%, rgba(16,185,129,0.15), transparent 64%)
+    `,
+  }}
+/>
+
 
       {/* Vignette for depth */}
       <div
