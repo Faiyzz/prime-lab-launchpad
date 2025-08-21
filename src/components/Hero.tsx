@@ -17,63 +17,7 @@ export const Hero = () => {
     >
       <Navigation />
 
-      {/* Multi-spot blobs in same dark color palette */}
-     <div
-  aria-hidden
-  className="absolute inset-0 z-0 pointer-events-none blur-3xl will-change-transform"
-  style={{
-    background: `
-      radial-gradient(44rem 44rem at 20% 30%, rgba(110,231,183,0.22), transparent 60%),
-      radial-gradient(40rem 40rem at 80% 25%, rgba(52,211,153,0.18), transparent 62%),
-      radial-gradient(36rem 36rem at 50% 75%, rgba(16,185,129,0.15), transparent 64%)
-    `,
-  }}
-/>
-
-
-      {/* Vignette for depth */}
-      <div
-        aria-hidden
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(120% 120% at 50% 50%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.07) 100%)",
-        }}
-      />
-
-      {/* Full-screen glass pane */}
-      <div
-        aria-hidden
-        className="
-          absolute inset-0 z-0 pointer-events-none
-          bg-white/10
-          backdrop-blur-2xl backdrop-saturate-150 backdrop-contrast-125
-          ring-1 ring-white/25
-          shadow-[0_20px_60px_rgba(0,0,0,0.12)]
-        "
-      >
-        {/* Inner highlight + shadow */}
-        <div className="absolute inset-0 pointer-events-none
-                        shadow-[inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-18px_38px_rgba(0,0,0,0.18)]" />
-
-        {/* Reflection streak */}
-        <div
-          className="absolute -top-10 -left-6 h-[140%] w-1/2 pointer-events-none mix-blend-screen blur-xl"
-          style={{
-            background:
-              "linear-gradient(115deg, rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.18) 22%, rgba(255,255,255,0.06) 38%, rgba(255,255,255,0) 58%)",
-          }}
-        />
-
-        {/* Fine texture */}
-        <div
-          className="absolute inset-0 opacity-[0.08] pointer-events-none"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(0deg, rgba(255,255,255,0.45) 0px, rgba(255,255,255,0.45) 1px, transparent 1px, transparent 2px)",
-          }}
-        />
-      </div>
+      
 
       {/* Content */}
       <div className="relative z-10 flex-1 flex items-center justify-center text-center">
