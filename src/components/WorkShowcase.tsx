@@ -37,7 +37,8 @@ export const WorkShowcase = () => {
           transition={{ duration: 1 }}
         >
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Our Work <span className="text-[#bc9c22]">Speaks for Itself</span>
+           Our Work <span className="font-bold italic">Speaks for Itself</span>
+
           </h2>
           <p className="text-lg sm:text-xl text-[#1C2120]/80 max-w-3xl mx-auto font-light">
             From zero to millions of views. Here’s our recent short-form editing work that went viral.

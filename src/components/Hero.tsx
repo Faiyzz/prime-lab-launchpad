@@ -38,9 +38,9 @@ export const Hero = () => {
             data-aos-delay="200"
           >
             Transform Your Content Into{" "}
-            <span className="block text-[#bc9c22]" data-aos="fade-up" data-aos-delay="400">
+           
               Viral Masterpieces
-            </span>
+            
           </h1>
 
           {/* CTA */}
@@ -50,7 +50,7 @@ export const Hero = () => {
               size="lg"
               className="
                 h-12 sm:h-14 px-6 sm:px-8
-                bg-[#1D3D2F] hover:bg-[#bc9c22]
+                bg-[#1D3D2F] hover:bg-[#223f32]
                 text-[#F4F1EB] hover:text-[#bfdbd6]
                 text-base sm:text-lg font-semibold
                 rounded-full transition-transform duration-300

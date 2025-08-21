@@ -7,7 +7,7 @@ export const BookCallSection = () => {
         {/* Heading */}
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Ready to <span className="text-[#bc9c22]">Transform Your Content?</span>
+            Ready to Transform Your Content?
           </h2>
           <p className="text-lg sm:text-xl text-[#F4F1EB]/80 max-w-3xl mx-auto font-light">
             Book your free 30-minute strategy call and let’s explore how to make your videos go viral — consistently.

@@ -25,10 +25,10 @@ export const VSLSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight">
-            See How We <span className="text-[#bc9c22]">Transform Content</span>
+            See How We Transform Content
           </h2>
           <p className="text-lg sm:text-xl text-[#F4F1EB]/80 max-w-3xl mx-auto font-light">
-            Watch how creators and brands scaled up <span className="text-[#bc9c22]">300%+</span> in engagement
+            Watch how creators and brands scaled up <span className="text-[#6ff5ff]">300%+</span> in engagement
             — and how you can too.
           </p>
         </motion.div>

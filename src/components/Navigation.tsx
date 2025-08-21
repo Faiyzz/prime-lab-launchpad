@@ -76,12 +76,12 @@ export const Navigation = () => {
             <Button
               onClick={scrollToBookCall}
               className="
-                bg-[#1D3D2F] hover:bg-[#bc9c22]
-                text-[#F4F1EB] hover:text-[#1C2120]
-                border border-[#bc9c22]
+                bg-[#1D3D2F] hover:bg-[#686661]
+                text-[#F4F1EB] hover:text-[#feffff]
+                border border-[#000000]
                 px-6 py-2 rounded-full font-semibold
                 transition-all duration-300
-                shadow-lg hover:shadow-[0_0_20px_#bc9c22aa]
+                shadow-lg hover:shadow-[0_0_20px_#686661]
               "
             >
               Book a Call
